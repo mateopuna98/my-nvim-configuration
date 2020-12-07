@@ -3,6 +3,7 @@ The following characteristics I want nvim to have:
 ### Implemented
 
 * Intellisense 
+* Save file with <leader> + S
 
 ### To implement
 
@@ -18,5 +19,4 @@ The following characteristics I want nvim to have:
 
 ### In progress
 
-* Save file with CTRL + S
 
