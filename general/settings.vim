@@ -1,6 +1,8 @@
 " set leader key
 let g:mapleader = "\<Space>"
 
+set nocp
+filetype plugin on 			" Plugins are enabled
 set hidden 				" TextEdit might fail if hidden is not set.
 set background=dark 			" Use dark gruvbox theme
 set rnu                                 " Enable line number   
@@ -18,6 +20,11 @@ augroup code_comments
 	autocmd FileType javascript noremap <buffer> <C-_> I//<esc>
 augroup END
 
+
+augroup TerminalStuff
+	au!
+	autocmd TermOpen * setlocal nonumber norelativenumber
+augroup END
 " Key Mappings Normal Mode
 
 nnoremap <C-h> <C-w>h
@@ -25,7 +32,7 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-nnoremap <leader>s :w<CR>
+nnoremap <leader>s <esc>:update<CR>
 nnoremap <C-q>wq!<CR> 		" Alternate way to save and quit 
 
 

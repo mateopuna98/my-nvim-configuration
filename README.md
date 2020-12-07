@@ -1,22 +1,23 @@
 The following characteristics I want nvim to have:
 
-### Implemented
+## Backlog
 
-* Intellisense 
-* Save file with <leader> + S
-
-### To implement
+### To Do
 
 * Linters
 * Git markers
 * File explorer
 * Autocompletion of brackets, parenthesis,etc
-* Resize split windows easily
 * Comment code as in PyCharm or other IDE's
 * Install airline
 * Fuzzy Finder
 * Handle virtual environments for Python
+* Run code and see results without having to leave vim
+### In Progress
 
-### In progress
+* Resize split windows easily
 
+### Done
 
+* Intellisense 
+* Save file with <leader> + S
